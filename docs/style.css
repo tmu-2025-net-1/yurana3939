@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow-y: scroll; /* 縦スクロールを有効化 */
-  background: linear-gradient(#C9E8F1, #ffffff); /* 背景をグラデーションに設定 */
+  background: linear-gradient(#c4dfe6, #ffffff); /* 背景をグラデーションに設定 */
   height: 20000px; /* スクロール可能な範囲を設定 */
 }
 canvas {
@@ -10,6 +10,8 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
 .sphere-label{
   position: fixed; /* 固定された位置 */
   top: 15%; /* 球体の真上に配置 */
@@ -288,4 +290,328 @@ canvas {
     max-width: 100%; /* 画像サイズを調整 */
     max-height: 100%;
   }
+}
+
+.label1 {
+  position: fixed;
+  top: 50%; /* 画面の真ん中（垂直方向） */
+  left: 20%; /* 画面の真ん中（水平方向） */
+  transform: translate(-50%, -50%); /* 要素の中心を基準にして中央配置 */
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10; /* 他の要素より前面に表示 */
+  text-align: center;
+  /* 0-200pxの範囲内に表示 */
+  max-width: 200px;
+  max-height: 200px;
+  opacity: 1; /* 初期状態で完全に表示 */
+  transition: opacity 0.5s ease-out; /* スムーズなフェードアウト */
+}
+
+.label2 {
+  position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 1s ease-in-out; /* フェードインアニメーション */
+}
+
+.label2.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label3 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 1s ease-in-out; /* フェードインアニメーション */
+}
+
+.label3.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+
+
+.label5 {
+   position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label5.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label6 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label6.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label7 {
+  position: fixed;
+  top: 45%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 500px;
+  transition: color 1s ease-in-out; /* フェードインアニメーション */
+}
+
+.label7.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label8 {
+  position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label8.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label9 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label9.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label10 {
+  position: fixed;
+  top: 45%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 500px;
+  transition: color 1s ease-in-out; /* フェードインアニメーション */
+}
+
+.label10.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label11 {
+ position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label11.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label12 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label12.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label13 {
+  position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label13.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label14 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label14.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label15 {
+  position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label15.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label16 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label16.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label17 {
+ position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label17.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label18 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label18.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
 }
