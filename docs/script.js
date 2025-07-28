@@ -155,6 +155,7 @@ window.addEventListener("scroll", () => {
 // スクロールイベントで画像を表示・非表示
 window.addEventListener("scroll", () => {
   const image = document.querySelector(".center-image");
+  const centerImage11Element = document.querySelector(".center-image11");
   const label5Element = document.querySelector(".label5");
   const label6Element = document.querySelector(".label6");
   const label7Element = document.querySelector(".label7");
@@ -162,12 +163,14 @@ window.addEventListener("scroll", () => {
 
   if (scrollY > 200 && scrollY < 2500) {
     image.classList.add("visible"); // 浮かび上がる
+    if (centerImage11Element) centerImage11Element.classList.add("visible"); // center-image11も表示
     if (label5Element) label5Element.classList.add("visible"); // label5も表示
     if (label6Element) label6Element.classList.add("visible"); // label6も表示
     if (label7Element) label7Element.classList.add("visible"); // label7も表示
     console.log("Labels should be visible at scroll:", scrollY); // デバッグ用
   } else {
     image.classList.remove("visible"); // 非表示
+    if (centerImage11Element) centerImage11Element.classList.remove("visible"); // center-image11も非表示
     if (label5Element) label5Element.classList.remove("visible"); // label5も非表示
     if (label6Element) label6Element.classList.remove("visible"); // label6も非表示
     if (label7Element) label7Element.classList.remove("visible"); // label7も非表示
@@ -181,16 +184,22 @@ window.addEventListener("scroll", () => {
   );
   const label8Element = document.querySelector(".label8");
   const label9Element = document.querySelector(".label9");
+  const centerImage6Element = document.querySelector(".center-image6");
+  const centerImage7Element = document.querySelector(".center-image7");
   const scrollY = window.scrollY;
 
   if (scrollY > 9000 && scrollY < 11000) {
     labels.forEach((label) => label.classList.add("visible")); // タイピングアニメーションを開始
     if (label8Element) label8Element.classList.add("visible"); // label8も表示
     if (label9Element) label9Element.classList.add("visible"); // label9も表示
+    if (centerImage6Element) centerImage6Element.classList.add("visible"); // center-image6も表示
+    if (centerImage7Element) centerImage7Element.classList.add("visible"); // center-image7も表示
   } else {
     labels.forEach((label) => label.classList.remove("visible")); // タイピングアニメーションをリセット
     if (label8Element) label8Element.classList.remove("visible"); // label8も非表示
     if (label9Element) label9Element.classList.remove("visible"); // label9も非表示
+    if (centerImage6Element) centerImage6Element.classList.remove("visible"); // center-image6も非表示
+    if (centerImage7Element) centerImage7Element.classList.remove("visible"); // center-image7も非表示
   }
 });
 
@@ -225,16 +234,25 @@ window.addEventListener("scroll", () => {
   );
   const label13Element = document.querySelector(".label13");
   const label14Element = document.querySelector(".label14");
+  const centerImage8Element = document.querySelector(".center-image8");
+  const centerImage9Element = document.querySelector(".center-image9");
+  const centerImage10Element = document.querySelector(".center-image10");
   const scrollY = window.scrollY;
 
   if (scrollY > 7000 && scrollY < 9000) {
     labels.forEach((label) => label.classList.add("visible")); // タイピングアニメーションを開始
     if (label13Element) label13Element.classList.add("visible"); // label13も表示
     if (label14Element) label14Element.classList.add("visible"); // label14も表示
+    if (centerImage8Element) centerImage8Element.classList.add("visible"); // center-image8も表示
+    if (centerImage9Element) centerImage9Element.classList.add("visible"); // center-image9も表示
+    if (centerImage10Element) centerImage10Element.classList.add("visible"); // center-image10も表示
   } else {
     labels.forEach((label) => label.classList.remove("visible")); // タイピングアニメーションをリセット
     if (label13Element) label13Element.classList.remove("visible"); // label13も非表示
     if (label14Element) label14Element.classList.remove("visible"); // label14も非表示
+    if (centerImage8Element) centerImage8Element.classList.remove("visible"); // center-image8も非表示
+    if (centerImage9Element) centerImage9Element.classList.remove("visible"); // center-image9も非表示
+    if (centerImage10Element) centerImage10Element.classList.remove("visible"); // center-image10も非表示
   }
 });
 
@@ -245,16 +263,22 @@ window.addEventListener("scroll", () => {
   );
   const label15Element = document.querySelector(".label15");
   const label16Element = document.querySelector(".label16");
+  const centerImage4Element = document.querySelector(".center-image4");
+  const centerImage5Element = document.querySelector(".center-image5");
   const scrollY = window.scrollY;
 
   if (scrollY > 11000 && scrollY < 13000) {
     labels.forEach((label) => label.classList.add("visible")); // タイピングアニメーションを開始
     if (label15Element) label15Element.classList.add("visible"); // label15も表示
     if (label16Element) label16Element.classList.add("visible"); // label16も表示
+    if (centerImage4Element) centerImage4Element.classList.add("visible"); // center-image4も表示
+    if (centerImage5Element) centerImage5Element.classList.add("visible"); // center-image5も表示
   } else {
     labels.forEach((label) => label.classList.remove("visible")); // タイピングアニメーションをリセット
     if (label15Element) label15Element.classList.remove("visible"); // label15も非表示
     if (label16Element) label16Element.classList.remove("visible"); // label16も非表示
+    if (centerImage4Element) centerImage4Element.classList.remove("visible"); // center-image4も非表示
+    if (centerImage5Element) centerImage5Element.classList.remove("visible"); // center-image5も非表示
   }
 });
 
