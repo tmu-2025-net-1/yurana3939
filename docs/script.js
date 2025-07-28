@@ -51,6 +51,12 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   const label = document.querySelector(".sphere-label");
   const label2 = document.querySelector(".sphere-label2");
+  const label12 = document.querySelector(".sphere-label12");
+  const label13 = document.querySelector(".sphere-label13");
+  const label14 = document.querySelector(".sphere-label14");
+  const label15 = document.querySelector(".sphere-label15");
+  const label16 = document.querySelector(".sphere-label16");
+  
   const label2Element = document.querySelector(".label2");
   const label3Element = document.querySelector(".label3");
   const label4Element = document.querySelector(".label4");
@@ -63,6 +69,26 @@ window.addEventListener("scroll", () => {
     label.classList.remove("hidden");
     label2.classList.add("visible");
     label2.classList.remove("hidden");
+    if (label12) {
+      label12.classList.add("visible");
+      label12.classList.remove("hidden");
+    }
+    if (label13) {
+      label13.classList.add("visible");
+      label13.classList.remove("hidden");
+    }
+    if (label14) {
+      label14.classList.add("visible");
+      label14.classList.remove("hidden");
+    }
+    if (label15) {
+      label15.classList.add("visible");
+      label15.classList.remove("hidden");
+    }
+    if (label16) {
+      label16.classList.add("visible");
+      label16.classList.remove("hidden");
+    }
     label2Element.classList.add("visible");
     label3Element.classList.add("visible");
     label4Element.classList.add("visible");
@@ -72,6 +98,26 @@ window.addEventListener("scroll", () => {
     label.classList.remove("visible");
     label2.classList.add("hidden");
     label2.classList.remove("visible");
+    if (label12) {
+      label12.classList.add("hidden");
+      label12.classList.remove("visible");
+    }
+    if (label13) {
+      label13.classList.add("hidden");
+      label13.classList.remove("visible");
+    }
+    if (label14) {
+      label14.classList.add("hidden");
+      label14.classList.remove("visible");
+    }
+    if (label15) {
+      label15.classList.add("hidden");
+      label15.classList.remove("visible");
+    }
+    if (label16) {
+      label16.classList.add("hidden");
+      label16.classList.remove("visible");
+    }
     label2Element.classList.remove("visible");
     label3Element.classList.remove("visible");
     label4Element.classList.remove("visible");
@@ -80,6 +126,26 @@ window.addEventListener("scroll", () => {
     label.classList.remove("visible");
     label2.classList.remove("hidden");
     label2.classList.remove("visible");
+    if (label12) {
+      label12.classList.remove("hidden");
+      label12.classList.remove("visible");
+    }
+    if (label13) {
+      label13.classList.remove("hidden");
+      label13.classList.remove("visible");
+    }
+    if (label14) {
+      label14.classList.remove("hidden");
+      label14.classList.remove("visible");
+    }
+    if (label15) {
+      label15.classList.remove("hidden");
+      label15.classList.remove("visible");
+    }
+    if (label16) {
+      label16.classList.remove("hidden");
+      label16.classList.remove("visible");
+    }
     label2Element.classList.remove("visible");
     label3Element.classList.remove("visible");
     label4Element.classList.remove("visible");
@@ -117,7 +183,7 @@ window.addEventListener("scroll", () => {
   const label9Element = document.querySelector(".label9");
   const scrollY = window.scrollY;
 
-  if (scrollY > 5300 && scrollY < 7000) {
+  if (scrollY > 9000 && scrollY < 11000) {
     labels.forEach((label) => label.classList.add("visible")); // タイピングアニメーションを開始
     if (label8Element) label8Element.classList.add("visible"); // label8も表示
     if (label9Element) label9Element.classList.add("visible"); // label9も表示
@@ -138,7 +204,7 @@ window.addEventListener("scroll", () => {
   const label12Element = document.querySelector(".label12");
   const scrollY = window.scrollY;
 
-  if (scrollY > 7000 && scrollY < 9000) {
+  if (scrollY > 5300 && scrollY < 7000) {
     labels.forEach((label) => label.classList.add("visible")); // タイピングアニメーションを開始
     if (label10Element) label10Element.classList.add("visible"); // label10も表示
     if (label11Element) label11Element.classList.add("visible"); // label11も表示
@@ -161,7 +227,7 @@ window.addEventListener("scroll", () => {
   const label14Element = document.querySelector(".label14");
   const scrollY = window.scrollY;
 
-  if (scrollY > 9000 && scrollY < 11000) {
+  if (scrollY > 7000 && scrollY < 9000) {
     labels.forEach((label) => label.classList.add("visible")); // タイピングアニメーションを開始
     if (label13Element) label13Element.classList.add("visible"); // label13も表示
     if (label14Element) label14Element.classList.add("visible"); // label14も表示
@@ -242,3 +308,60 @@ window.addEventListener("scroll", () => {
     label1.style.opacity = opacity.toString();
   }
 });
+
+// スクロールイベントでlabel19とlabel20を表示・非表示
+window.addEventListener("scroll", () => {
+
+
+  const label21Element = document.querySelector(".label21");
+  const label19Element = document.querySelector(".label19");
+  const label20Element = document.querySelector(".label20");
+  const scrollY = window.scrollY;
+
+  if (scrollY > 15000 && scrollY < 17000) {
+    if (label21Element) label21Element.classList.add("visible"); // label21を表示
+    if (label19Element) label19Element.classList.add("visible"); // label19を表示
+    if (label20Element) label20Element.classList.add("visible"); // label20を表示
+  } else {
+    if (label21Element) label21Element.classList.remove("visible"); // label21を非表示
+    if (label19Element) label19Element.classList.remove("visible"); // label19を非表示
+    if (label20Element) label20Element.classList.remove("visible"); // label20を非表示
+  }
+});
+
+// スクロールイベントでlabel19とlabel20を表示・非表示
+window.addEventListener("scroll", () => {
+
+
+  const label22Element = document.querySelector(".label22");
+  const label23Element = document.querySelector(".label23");
+  const label20Element = document.querySelector(".label24");
+  const scrollY = window.scrollY;
+  if (scrollY > 17000 && scrollY < 19000) {
+    if (label22Element) label22Element.classList.add("visible"); // label22を表示
+    if (label23Element) label23Element.classList.add("visible"); // label23を表示
+    if (label20Element) label20Element.classList.add("visible"); // label20を表示
+  } else {
+    if (label22Element) label22Element.classList.remove("visible"); // label22を非表示
+    if (label23Element) label23Element.classList.remove("visible"); // label23を非表示
+    if (label20Element) label20Element.classList.remove("visible"); // label20を非表示
+  }
+});
+ // スクロールイベントでlabel19とlabel20を表示・非表示
+window.addEventListener("scroll", () => {
+
+
+  const label22Element = document.querySelector(".label25");
+  const label23Element = document.querySelector(".label26");
+  const label20Element = document.querySelector(".label27");
+  const scrollY = window.scrollY;
+  if (scrollY > 19000 && scrollY < 21000) {
+    if (label22Element) label22Element.classList.add("visible"); // label22を表示
+    if (label23Element) label23Element.classList.add("visible"); // label23を表示
+    if (label20Element) label20Element.classList.add("visible"); // label20を表示
+  } else {
+    if (label22Element) label22Element.classList.remove("visible"); // label22を非表示
+    if (label23Element) label23Element.classList.remove("visible"); // label23を非表示
+    if (label20Element) label20Element.classList.remove("visible"); // label20を非表示
+  }
+}); 

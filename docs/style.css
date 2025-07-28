@@ -2,7 +2,7 @@ body {
   margin: 0;
   overflow-y: scroll; /* 縦スクロールを有効化 */
   background: linear-gradient(#c4dfe6, #ffffff); /* 背景をグラデーションに設定 */
-  height: 20000px; /* スクロール可能な範囲を設定 */
+  height: 25000px; /* スクロール可能な範囲を設定 */
 }
 canvas {
   position: fixed; /* キャンバスを固定 */
@@ -14,7 +14,7 @@ canvas {
 
 .sphere-label{
   position: fixed; /* 固定された位置 */
-  top: 15%; /* 球体の真上に配置 */
+  top: 45%; /* 球体の真上に配置 */
   left: -100%; /* 初期位置を画面外に設定 */
   transform: translateY(-50%);
   font-size: 24px;
@@ -22,19 +22,7 @@ canvas {
   width: 1548px;
   color: rgba(0, 0, 0, 0); /* 初期状態で透明 */
   font-family: 'Shippori Mincho', serif;
-  transition: color 1s ease-in-out, left 2s ease-in-out; /* アニメーションの設定 */
-}
-.sphere-label2 {
-  position: fixed; /* 固定された位置 */
-  top: 85%; /* 球体の真上に配置 */
-  left: 100%; /* 初期位置を画面外に設定 */
-  transform: translateY(-50%);
-  font-size: 24px;
-  font-weight: bold;
-  width: 1548px;
-  color: rgba(0, 0, 0, 0); /* 初期状態で透明 */
-  font-family: 'Shippori Mincho', serif;
-  transition: color 1s ease-in-out, left 2s ease-in-out; /* アニメーションの設定 */
+  transition: color 1s ease-in-out, left 1s ease-in-out; /* アニメーションの設定 */
 }
 
 .sphere-label.visible{
@@ -45,10 +33,67 @@ canvas {
 .sphere-label.hidden{
   color: rgba(0, 0, 0, 0); /* 消える */
 }
+.sphere-label14{
+  position: fixed; /* 固定された位置 */
+  top: 50%; /* 球体の真上に配置 */
+  left: -100%; /* 初期位置を画面外に設定 */
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  width: 1548px;
+  color: rgba(0, 0, 0, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  transition: color 1s ease-in-out, left 1s ease-in-out; /* アニメーションの設定 */
+}
+
+.sphere-label14.visible{
+  color: rgb(249, 249, 249); /* 浮かび上がる */
+  left: 0%; /* 左から右に流れる */
+}
+
+.sphere-label14.hidden{
+  color: rgba(0, 0, 0, 0); /* 消える */
+}
+
+.sphere-label13{
+  position: fixed; /* 固定された位置 */
+  top: 55%; /* 球体の真上に配置 */
+  left: -100%; /* 初期位置を画面外に設定 */
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  width: 1548px;
+  color: rgba(0, 0, 0, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  transition: color 1s ease-in-out, left 1s ease-in-out; /* アニメーションの設定 */
+}
+
+.sphere-label13.visible{
+  color: rgb(249, 249, 249); /* 浮かび上がる */
+  left: 0%; /* 左から右に流れる */
+}
+
+.sphere-label13.hidden{
+  color: rgba(0, 0, 0, 0); /* 消える */
+}
+
+
+.sphere-label2 {
+  position: fixed; /* 固定された位置 */
+  top: 45%; /* 球体の真上に配置 */
+  left: 100%; /* 初期位置を画面外に設定 */
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  width: 1548px;
+  color: rgba(0, 0, 0, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  transition: color 1s ease-in-out, left 1s ease-in-out; /* アニメーションの設定 */
+}
 
 .sphere-label2.visible {
   color: rgb(249, 249, 249); /* 浮かび上がる */
-  left: 0%; /* 右から左に流れる */
+  left:65%; /* 右から左に流れる */
 }
 
 .sphere-label3 {
@@ -614,4 +659,216 @@ canvas {
 
 .label18.visible {
   color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label19 {
+ position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label19.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label20 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label20.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+.label21 {
+  position: fixed;
+  top: 45%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 500px;
+  transition: color 1s ease-in-out; /* フェードインアニメーション */
+}
+
+.label21.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label22 {
+ position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label22.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label23 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label23.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+.label24 {
+  position: fixed;
+  top: 45%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 500px;
+  transition: color 1s ease-in-out; /* フェードインアニメーション */
+}
+
+.label24.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label25 {
+ position: fixed;
+  top: 50%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(164, 163, 163, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label25.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.label26 {
+  position: fixed;
+  top: 60%; /* 画面の下部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 400px;
+  transition: color 2s ease-in-out; /* フェードインアニメーション */
+}
+
+.label26.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+.label27 {
+  position: fixed;
+  top: 45%; /* 画面の上部 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  z-index: 10;
+  text-align: center;
+  max-width: 500px;
+  transition: color 1s ease-in-out; /* フェードインアニメーション */
+}
+
+.label27.visible {
+  color: rgb(181, 180, 180); /* 表示状態 */
+}
+
+.sphere-label15 {
+  position: fixed; /* 固定された位置 */
+  top: 50%; /* 球体の真上に配置 */
+  left: 100%; /* 初期位置を画面外に設定 */
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  width: 1548px;
+  color: rgba(0, 0, 0, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  transition: color 1s ease-in-out, left 1s ease-in-out; /* アニメーションの設定 */
+}
+
+.sphere-label15.visible {
+  color: rgb(249, 249, 249); /* 浮かび上がる */
+  left: 65%; /* 右から左に流れる */
+}
+
+.sphere-label15.hidden {
+  color: rgba(0, 0, 0, 0); /* 消える */
+}
+
+.sphere-label16 {
+  position: fixed; /* 固定された位置 */
+  top: 55%; /* 球体の真上に配置 */
+  left: 100%; /* 初期位置を画面外に設定 */
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  width: 1548px;
+  color: rgba(0, 0, 0, 0); /* 初期状態で透明 */
+  font-family: 'Shippori Mincho', serif;
+  transition: color 1s ease-in-out, left 1s ease-in-out; /* アニメーションの設定 */
+}
+
+.sphere-label16.visible {
+  color: rgb(249, 249, 249); /* 浮かび上がる */
+  left: 65%; /* 右から左に流れる */
+}
+
+.sphere-label16.hidden {
+  color: rgba(0, 0, 0, 0); /* 消える */
 }
