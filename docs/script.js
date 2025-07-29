@@ -229,9 +229,6 @@ window.addEventListener("scroll", () => {
 
 // スクロールイベントで全てのラベルのタイピングアニメーションを開始
 window.addEventListener("scroll", () => {
-  const labels = document.querySelectorAll(
-    ".sphere-label10"
-  );
   const label13Element = document.querySelector(".label13");
   const label14Element = document.querySelector(".label14");
   const centerImage8Element = document.querySelector(".center-image8");
@@ -240,14 +237,12 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
   if (scrollY > 7000 && scrollY < 9000) {
-    labels.forEach((label) => label.classList.add("visible")); // タイピングアニメーションを開始
     if (label13Element) label13Element.classList.add("visible"); // label13も表示
     if (label14Element) label14Element.classList.add("visible"); // label14も表示
     if (centerImage8Element) centerImage8Element.classList.add("visible"); // center-image8も表示
     if (centerImage9Element) centerImage9Element.classList.add("visible"); // center-image9も表示
     if (centerImage10Element) centerImage10Element.classList.add("visible"); // center-image10も表示
   } else {
-    labels.forEach((label) => label.classList.remove("visible")); // タイピングアニメーションをリセット
     if (label13Element) label13Element.classList.remove("visible"); // label13も非表示
     if (label14Element) label14Element.classList.remove("visible"); // label14も非表示
     if (centerImage8Element) centerImage8Element.classList.remove("visible"); // center-image8も非表示
@@ -360,15 +355,18 @@ window.addEventListener("scroll", () => {
   const label22Element = document.querySelector(".label22");
   const label23Element = document.querySelector(".label23");
   const label20Element = document.querySelector(".label24");
+  const centerImage16Element = document.querySelector(".center-image16");
   const scrollY = window.scrollY;
   if (scrollY > 17000 && scrollY < 19000) {
     if (label22Element) label22Element.classList.add("visible"); // label22を表示
     if (label23Element) label23Element.classList.add("visible"); // label23を表示
     if (label20Element) label20Element.classList.add("visible"); // label20を表示
+    if (centerImage16Element) centerImage16Element.classList.add("visible"); // center-image16を表示
   } else {
     if (label22Element) label22Element.classList.remove("visible"); // label22を非表示
     if (label23Element) label23Element.classList.remove("visible"); // label23を非表示
     if (label20Element) label20Element.classList.remove("visible"); // label20を非表示
+    if (centerImage16Element) centerImage16Element.classList.remove("visible"); // center-image16を非表示
   }
 });
  // スクロールイベントでlabel19とlabel20を表示・非表示
@@ -378,14 +376,23 @@ window.addEventListener("scroll", () => {
   const label22Element = document.querySelector(".label25");
   const label23Element = document.querySelector(".label26");
   const label20Element = document.querySelector(".label27");
+  const sphereLabel10Element = document.querySelector(".sphere-label10");
+  const centerImage14Element = document.querySelector(".center-image14");
+  const centerImage15Element = document.querySelector(".center-image15");
   const scrollY = window.scrollY;
   if (scrollY > 19000 && scrollY < 21000) {
     if (label22Element) label22Element.classList.add("visible"); // label22を表示
     if (label23Element) label23Element.classList.add("visible"); // label23を表示
     if (label20Element) label20Element.classList.add("visible"); // label20を表示
+    if (sphereLabel10Element) sphereLabel10Element.classList.add("visible"); // sphere-label10も表示
+    if (centerImage14Element) centerImage14Element.classList.add("visible"); // center-image14も表示
+    if (centerImage15Element) centerImage15Element.classList.add("visible"); // center-image15も表示
   } else {
     if (label22Element) label22Element.classList.remove("visible"); // label22を非表示
     if (label23Element) label23Element.classList.remove("visible"); // label23を非表示
     if (label20Element) label20Element.classList.remove("visible"); // label20を非表示
+    if (sphereLabel10Element) sphereLabel10Element.classList.remove("visible"); // sphere-label10も非表示
+    if (centerImage14Element) centerImage14Element.classList.remove("visible"); // center-image14も非表示
+    if (centerImage15Element) centerImage15Element.classList.remove("visible"); // center-image15も非表示
   }
 }); 
