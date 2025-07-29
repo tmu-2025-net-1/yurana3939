@@ -339,8 +339,8 @@ canvas {
 
 .label1 {
   position: fixed;
-  top: 50%; /* 画面の真ん中（垂直方向） */
-  left: 20%; /* 画面の真ん中（水平方向） */
+  top: 15%; /* 画面の真ん中（垂直方向） */
+  left: 50%; /* 画面の真ん中（水平方向） */
   transform: translate(-50%, -50%); /* 要素の中心を基準にして中央配置 */
   font-size: 48px;
   font-weight: bold;
@@ -353,6 +353,16 @@ canvas {
   max-height: 200px;
   opacity: 1; /* 初期状態で完全に表示 */
   transition: opacity 0.5s ease-out; /* スムーズなフェードアウト */
+}
+.center-image18 {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1; /* 初期状態で表示 */
+  transition: opacity 0.5s ease-in-out; /* フェードアウトアニメーション */
 }
 
 .label2 {
@@ -1084,3 +1094,4 @@ canvas {
 .center-image17.visible {
   opacity: 1; /* 表示状態 */
 }
+

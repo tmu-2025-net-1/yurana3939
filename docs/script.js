@@ -306,26 +306,30 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// label1のスクロールフェードアウトアニメーション
+// label1とcenter-image18のスクロールフェードアウトアニメーション
 window.addEventListener("scroll", () => {
   const label1 = document.querySelector(".label1");
+  const centerImage18 = document.querySelector(".center-image18");
   const scrollY = window.scrollY;
   
   // スクロール位置に応じて透明度を計算（0〜500pxの範囲でフェードアウト）
   const fadeStart = 0;
   const fadeEnd = 500;
   
+  let opacity;
   if (scrollY <= fadeStart) {
     // スクロール開始前は完全に表示
-    label1.style.opacity = "1";
+    opacity = "1";
   } else if (scrollY >= fadeEnd) {
     // スクロール終了後は完全に非表示
-    label1.style.opacity = "0";
+    opacity = "0";
   } else {
     // スクロール中は段階的にフェードアウト
-    const opacity = 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart);
-    label1.style.opacity = opacity.toString();
+    opacity = (1 - (scrollY - fadeStart) / (fadeEnd - fadeStart)).toString();
   }
+  
+  label1.style.opacity = opacity;
+  if (centerImage18) centerImage18.style.opacity = opacity;
 });
 
 // スクロールイベントでlabel19とlabel20を表示・非表示
