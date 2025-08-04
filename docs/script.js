@@ -10,7 +10,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(width, height);
-renderer.setClearColor(0xC9E8F1, 1); // 背景色を#C9E8F1に設定
+renderer.setClearColor(0x000000, 1); // 背景色を黒に設定
 
 // シーンを作成
 const scene = new THREE.Scene();
@@ -42,7 +42,7 @@ function tick() {
 // スクロールイベントを追加
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
-  renderer.setClearColor(0xC9E8F1 + scrollY * 0.0001, 1); // 背景色をスクロールに応じて変化
+  renderer.setClearColor(0x68DDFF, 1); // 背景色を#68DDFFに固定
 });
 
 

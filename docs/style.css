@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow-y: scroll; /* 縦スクロールを有効化 */
-  background: linear-gradient(#c4dfe6, #ffffff); /* 背景をグラデーションに設定 */
+  background: linear-gradient(#edf0f1, #ffffff); /* 背景をグラデーションに設定 */
   height: 25000px; /* スクロール可能な範囲を設定 */
 }
 canvas {
