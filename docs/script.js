@@ -328,17 +328,20 @@ window.addEventListener("scroll", () => {
   const label23Element = document.querySelector(".label23");
   const label20Element = document.querySelector(".label24");
   const centerImage16Element = document.querySelector(".center-image16");
+  const centerImage90Element = document.querySelector(".center-image90");
   const scrollY = window.scrollY;
   if (scrollY > 17000 && scrollY < 19000) {
     if (label22Element) label22Element.classList.add("visible"); // label22を表示
     if (label23Element) label23Element.classList.add("visible"); // label23を表示
     if (label20Element) label20Element.classList.add("visible"); // label20を表示
     if (centerImage16Element) centerImage16Element.classList.add("visible"); // center-image16を表示
+    if (centerImage90Element) centerImage90Element.classList.add("visible"); // center-image90を表示
   } else {
     if (label22Element) label22Element.classList.remove("visible"); // label22を非表示
     if (label23Element) label23Element.classList.remove("visible"); // label23を非表示
     if (label20Element) label20Element.classList.remove("visible"); // label20を非表示
     if (centerImage16Element) centerImage16Element.classList.remove("visible"); // center-image16を非表示
+    if (centerImage90Element) centerImage90Element.classList.remove("visible"); // center-image90を非表示
   }
 });
  // スクロールイベントでlabel19とlabel20を表示・非表示
@@ -376,6 +379,12 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   const label30Element = document.querySelector(".label30");
   const label31Element = document.querySelector(".label31");
+  const label40Element = document.querySelector(".label40");
+  const label41Elements = document.querySelectorAll(".label41"); // 複数のlabel41要素を取得
+  const label42Element = document.querySelector(".label42");
+  const label43Element = document.querySelector(".label43");
+  const label44Element = document.querySelector(".label44");
+  const label45Element = document.querySelector(".label45");
   const centerImage26Element = document.querySelector(".center-image26");
   const centerImage27Element = document.querySelector(".center-image27");
   const scrollY = window.scrollY;
@@ -383,12 +392,36 @@ window.addEventListener("scroll", () => {
   if (scrollY > 5300 && scrollY < 7000) {
     if (label30Element) label30Element.classList.add("visible"); // label30を表示
     if (label31Element) label31Element.classList.add("visible"); // label31を表示
+    if (label40Element) label40Element.classList.add("visible"); // label40を表示（左から右にフェードイン）
+    label41Elements.forEach(element => element.classList.add("visible")); // すべてのlabel41を表示
+    if (label42Element) label42Element.classList.add("visible"); // label42を表示（左から右にフェードイン）
+    if (label43Element) label43Element.classList.add("visible"); // label43を表示（右から左にフェードイン）
+    if (label44Element) label44Element.classList.add("visible"); // label44を表示（右から左にフェードイン）
+    if (label45Element) label45Element.classList.add("visible"); // label45を表示（右から左にフェードイン）
     if (centerImage26Element) centerImage26Element.classList.add("visible"); // center-image26を表示
     if (centerImage27Element) centerImage27Element.classList.add("visible"); // center-image27を表示
   } else {
     if (label30Element) label30Element.classList.remove("visible"); // label30を非表示
     if (label31Element) label31Element.classList.remove("visible"); // label31を非表示
+    if (label40Element) label40Element.classList.remove("visible"); // label40を非表示
+    label41Elements.forEach(element => element.classList.remove("visible")); // すべてのlabel41を非表示
+    if (label42Element) label42Element.classList.remove("visible"); // label42を非表示
+    if (label43Element) label43Element.classList.remove("visible"); // label43を非表示
+    if (label44Element) label44Element.classList.remove("visible"); // label44を非表示
+    if (label45Element) label45Element.classList.remove("visible"); // label45を非表示
     if (centerImage26Element) centerImage26Element.classList.remove("visible"); // center-image26を非表示
     if (centerImage27Element) centerImage27Element.classList.remove("visible"); // center-image27を非表示
+  }
+});
+
+// スクロールイベントでsphere-label45を表示・非表示
+window.addEventListener("scroll", () => {
+  const sphereLabel45Element = document.querySelector(".sphere-label45");
+  const scrollY = window.scrollY;
+
+  if (scrollY > 21000 && scrollY < 23000) {
+    if (sphereLabel45Element) sphereLabel45Element.classList.add("visible"); // sphere-label45を表示
+  } else {
+    if (sphereLabel45Element) sphereLabel45Element.classList.remove("visible"); // sphere-label45を非表示
   }
 });
